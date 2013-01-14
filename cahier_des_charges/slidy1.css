@@ -1,0 +1,334 @@
+body {
+	margin: 0px; padding: 0px; width: 100%; height: 100%; color: black; font-family: "Gill Sans MT", "Gill Sans", GillSans, sans-serif; font-size: 14pt; background-color: white;
+}
+div.toolbar {
+	left: 0px; top: auto; height: 1.2em; text-align: right; right: 0px; bottom: 0px; color: red; padding-right: 1em; padding-left: 1em; font-size: 60%; border-top-color: rgb(180, 180, 180); border-top-width: 1px; border-top-style: solid; position: fixed; z-index: 200; background-color: rgb(240, 240, 240);
+}
+div.toolbar span.copyright {
+	color: black; margin-left: 0.5em;
+}
+div.initial_prompt {
+	width: 100%; bottom: 1.2em; position: absolute; z-index: 1000; cursor: pointer; opacity: 0.35; background-color: rgb(200, 200, 200);
+}
+div.initial_prompt p.help {
+	text-align: center;
+}
+div.initial_prompt p.close {
+	text-align: right; font-style: italic;
+}
+div.slidy_toc {
+	background: rgb(240, 240, 240); border-width: 2px; border-style: solid; padding: 1em; left: 4em; top: auto; width: 60%; height: 30em; right: auto; bottom: 4em; overflow: auto; font-size: 60%; position: absolute; z-index: 300; max-width: 30em;
+}
+div.slidy_toc .toc_heading {
+	margin: 0px 0px 1em; width: 100%; text-align: center; border-bottom-color: rgb(180, 180, 180); border-bottom-width: 1px; border-bottom-style: solid;
+}
+div.slide {
+	border-width: 0px; margin: 0px; padding: 0px 20px; left: 0px; top: 0px; right: 0px; bottom: 0px; line-height: 120%; clear: both; z-index: 20; background-color: transparent;
+}
+div.background {
+	display: none;
+}
+div.handout {
+	margin-right: 20px; margin-left: 20px;
+}
+div.titlepage.slide {
+	text-align: center;
+}
+div.h1.titlepage.slide {
+	padding-top: 10%;
+}
+div.slide h1 {
+	margin: 0px 60pt 0.5em 0px; padding: 4pt 20pt 4pt 0px; line-height: 1.2em; font-size: 160%; display: block;
+}
+div.toc {
+	background: rgb(240, 240, 240); padding: 1em; border: thin solid black; left: 4em; top: auto; width: 60%; height: 30em; right: auto; bottom: 4em; color: black; overflow: auto; display: block; visibility: visible; position: absolute; z-index: 300; max-width: 30em;
+}
+div.toc-heading {
+	width: 100%; text-align: center; margin-bottom: 1em; border-bottom-color: rgb(180, 180, 180); border-bottom-width: 1px; border-bottom-style: solid;
+}
+pre {
+	border-width: thin thin thin 1em; border-style: solid; border-color: rgb(149, 171, 208); padding: 0.2em 1em; color: rgb(0, 66, 140); line-height: 120%; font-size: 80%; font-weight: bold; background-color: rgb(228, 229, 231);
+}
+li pre {
+	margin-left: 0px;
+}
+blockquote {
+	font-style: italic;
+}
+img {
+	background-color: transparent;
+}
+p.copyright {
+	font-size: smaller;
+}
+.center {
+	text-align: center;
+}
+.footnote {
+	font-size: smaller; margin-left: 2em;
+}
+a img {
+	border-width: 0px;
+}
+a:visited {
+	color: navy;
+}
+a:link {
+	color: navy;
+}
+a:hover {
+	color: red; text-decoration: underline;
+}
+a:active {
+	color: red; text-decoration: underline;
+}
+a {
+	text-decoration: none;
+}
+.navbar a:link {
+	color: white;
+}
+.navbar a:visited {
+	color: yellow;
+}
+.navbar a:active {
+	color: red;
+}
+.navbar a:hover {
+	color: red;
+}
+ul {
+	list-style-type: square;
+}
+ul ul {
+	list-style-type: disc;
+}
+ul ul ul {
+	list-style-type: circle;
+}
+ul ul ul ul {
+	list-style-type: disc;
+}
+li {
+	margin-top: 0.5em; margin-left: 0.5em;
+}
+li li {
+	font-size: 85%; font-style: italic;
+}
+li li li {
+	font-size: 85%; font-style: normal;
+}
+div dt {
+	font-weight: bold; margin-top: 1em; margin-bottom: 0.5em; margin-left: 0px;
+}
+div dd {
+	margin-bottom: 0.5em; margin-left: 2em;
+}
+p {
+	margin-right: 1em; margin-left: 1em;
+}
+pre {
+	margin-right: 1em; margin-left: 1em;
+}
+ul {
+	margin-right: 1em; margin-left: 1em;
+}
+ol {
+	margin-right: 1em; margin-left: 1em;
+}
+blockquote {
+	margin-right: 1em; margin-left: 1em;
+}
+h2 {
+	margin-right: 1em; margin-left: 1em;
+}
+h3 {
+	margin-right: 1em; margin-left: 1em;
+}
+h4 {
+	margin-right: 1em; margin-left: 1em;
+}
+h5 {
+	margin-right: 1em; margin-left: 1em;
+}
+h6 {
+	margin-right: 1em; margin-left: 1em;
+}
+dl {
+	margin-right: 1em; margin-left: 1em;
+}
+table {
+	margin-right: 1em; margin-left: 1em;
+}
+p.subhead {
+	font-weight: bold; margin-top: 2em;
+}
+.smaller {
+	font-size: smaller;
+}
+.bigger {
+	font-size: 130%;
+}
+td {
+	padding: 0.2em;
+}
+th {
+	padding: 0.2em;
+}
+ul {
+	margin: 0.5em 1.5em; padding: 0px;
+}
+ol {
+	margin: 0.5em 1.5em; padding: 0px;
+}
+ul {
+	list-style-type: square;
+}
+ul ul {
+	list-style-type: disc;
+}
+ul ul ul {
+	list-style-type: circle;
+}
+ul ul ul ul {
+	list-style-type: disc;
+}
+ul li {
+	list-style: square; margin: 0.1em 0em 0.6em 0px; padding: 0px; line-height: 140%;
+}
+ol li {
+	margin: 0.1em 0em 0.6em 1.5em; padding: 0px; line-height: 140%; list-style-type: decimal;
+}
+li ul li {
+	padding: 0px; font-size: 85%; font-style: italic; list-style-type: disc;
+}
+li li ul li {
+	padding: 0px; font-size: 85%; font-style: normal; list-style-type: circle;
+}
+li li li ul li {
+	padding: 0px; list-style-type: disc;
+}
+li ol li {
+	list-style-type: decimal;
+}
+li li ol li {
+	list-style-type: decimal;
+}
+ol.outline li:hover {
+	cursor: pointer;
+}
+ol.outline li.nofold:hover {
+	cursor: default;
+}
+ul.outline li:hover {
+	cursor: pointer;
+}
+ul.outline li.nofold:hover {
+	cursor: default;
+}
+ol.outline {
+	list-style: decimal;
+}
+ol.outline ol {
+	list-style-type: lower-alpha;
+}
+ol.outline li.nofold {
+	background: url("../graphics/nofold-dim.gif") no-repeat 0px 0.5em; padding: 0px 0px 0px 20px;
+}
+ol.outline li.unfolded {
+	background: url("../graphics/fold-dim.gif") no-repeat 0px 0.5em; padding: 0px 0px 0px 20px;
+}
+ol.outline li.folded {
+	background: url("../graphics/unfold-dim.gif") no-repeat 0px 0.5em; padding: 0px 0px 0px 20px;
+}
+ol.outline li.unfolded:hover {
+	background: url("../graphics/fold.gif") no-repeat 0px 0.5em; padding: 0px 0px 0px 20px;
+}
+ol.outline li.folded:hover {
+	background: url("../graphics/unfold.gif") no-repeat 0px 0.5em; padding: 0px 0px 0px 20px;
+}
+ul.outline li.nofold {
+	background: url("../graphics/nofold-dim.gif") no-repeat 0px 0.5em; padding: 0px 0px 0px 20px;
+}
+ul.outline li.unfolded {
+	background: url("../graphics/fold-dim.gif") no-repeat 0px 0.5em; padding: 0px 0px 0px 20px;
+}
+ul.outline li.folded {
+	background: url("../graphics/unfold-dim.gif") no-repeat 0px 0.5em; padding: 0px 0px 0px 20px;
+}
+ul.outline li.unfolded:hover {
+	background: url("../graphics/fold.gif") no-repeat 0px 0.5em; padding: 0px 0px 0px 20px;
+}
+ul.outline li.folded:hover {
+	background: url("../graphics/unfold.gif") no-repeat 0px 0.5em; padding: 0px 0px 0px 20px;
+}
+a.titleslide {
+	font-style: italic; font-weight: bold;
+}
+img.hidden {
+	display: none; visibility: hidden;
+}
+div.initial_prompt {
+	display: none; visibility: hidden;
+}
+div.slide {
+	visibility: visible; position: inherit;
+}
+div.handout {
+	border-top-color: black; border-top-width: thin; border-top-style: solid;
+}
+.hidden {
+	display: none; visibility: visible;
+}
+div.hidden.slide {
+	display: block; visibility: visible;
+}
+div.hidden.handout {
+	display: block; visibility: visible;
+}
+div.background {
+	display: none; visibility: hidden;
+}
+body.single_slide div.initial_prompt {
+	display: block; visibility: visible;
+}
+body.single_slide div.background {
+	display: block; visibility: visible;
+}
+body.single_slide div.hidden.background {
+	display: none; visibility: hidden;
+}
+body.single_slide .invisible {
+	visibility: hidden;
+}
+body.single_slide .hidden {
+	display: none; visibility: hidden;
+}
+body.single_slide div.slide {
+	position: absolute;
+}
+body.single_slide div.handout {
+	display: none; visibility: hidden;
+}
+.hidden {
+	display: block; visibility: visible;
+}
+div.slide pre {
+	padding-left: 0.5em; font-size: 60%;
+}
+div.toolbar {
+	display: none; visibility: hidden;
+}
+div.slidy_toc {
+	display: none; visibility: hidden;
+}
+div.background {
+	display: none; visibility: hidden;
+}
+div.slide {
+	page-break-before: always;
+}
+div.first-slide.slide {
+	page-break-before: avoid;
+}
+<img src="cercle.jpg" alt="forme exemple: cercle" />

@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head> 
+    <meta http-equiv="content-type" content="text/html; charset=Ansi">
+    <title>Cahier des charges</title> 
+    <link rel="stylesheet" type="text/css" media="screen, projection, print" 
+     href="slidy1.css" />
+    <link rel="stylesheet" type="text/css" media="screen, projection, print" 
+     href="style1.css" />
+    <script src="showdown.js"></script>
+    <script src="slidy.js"></script>
+    
+</head>
+<body>
+<script type=text/markdown>
+<!--
+
+                                        Emma     Mélodie     Ophélie
+
+---------------------------------------------------------------------------------------------------
+
+                                             Cahier des charges
+											 
+											 
+                                             compas dans l'oeil
+											 
+
+                                                    
+													MENU
+---------------------------------------------------------------------------------------------------
+
+- Instructions 
+- Description du jeu
+
+![schema](img/cercle.jpg)
+				
+---------------------------------------------------------------------------------------------------
+				                             Instructions
+
+- Le but du jeu est de trouver le centre des différentes formes géométriques qui apparaissent
+ dans un temps limité.
+
+- Les instructions vont apparaitre avant le commencement du jeu avec une case « ok » écrit
+ en vert situé en dessous. Après avoir cliquer sur « ok », les instructions vont disparaitre
+ et le jeu commencera.
+
+---------------------------------------------------------------------------------------------------											 
+											 Instruction
+											 
+Le but du jeu est de trouver le centre des différentes formes géométriques qui apparaissent dans un temps limité.
+
+![schema](img/ok.gif)
+
+---------------------------------------------------------------------------------------------------
+                                             Description du jeu
+							
+- Après avoir cliquer sur ok , une forme apparait légèrement à gauche du centre de l’écran, pour laisser la place au temps et au score qui seront sur la droite.
+- Les formes possibles sont : 
+![](img/fleche.gif) ![](img/rond.gif) ![](img/carre.gif) 
+
+![](img/nuage.gif) ![](img/triangle.gif) ![](img/parallelogramme.gif) 
+
+![](img/hexagone.gif) ![](img/losange.gif)
+
+----------------------------------------------------------------------------------------------------
+							Les formes changerons d’un niveau à l’autre dans l’ordre :
+ 
+Niveau 1 : rond
+
+Niveau 2 : flèche 
+
+Niveau 3 : carré
+
+Niveau 4 : triangle
+
+Niveau 5 : losange
+
+Niveau 6 : hexagone
+
+Niveau 7 : parallélogramme
+
+Niveau 8 : nuage
+
+
+----------------------------------------------------------------------------------------------------
+- Le score du joueur sera de moins en moins élevé plus la marge d’erreur sera grande (-1 points tous les 1 pixels). Le score est sur 100.  Le score apparaitra dans un cadre rouge avec une écriture noire .
+
+![schema](img/score.gif)
+
+- Le temps par de  1 minute 40 et diminue de 7 secondes par niveaux . Toutes 10 secondes le score diminue de 5 points. Le temps apparaitra dans un cadre noir et avec une écriture rouge. 
+
+![schema](img/temps.gif)
+
+- Après que le joueur ai cliquer avec une croix noire le vrai centre apparait sous forme d’une croix rouge.
+
+----------------------------------------------------------------------------------------------------
+											 Exemple de jeu
+Niveau 1 :
+
+![schema](img/exemple1.gif)
+
+----------------------------------------------------------------------------------------------------
+											 Exemple de jeu
+Niveau 1 :
+
+![schema](img/exemple2.gif)
+
+----------------------------------------------------------------------------------------------------
+											 Exemple de jeu
+Niveau 1 :
+
+![schema](img/exemple3.gif)
+
+-->
+</script>
+<script>
+var scripts = document.getElementsByTagName('script');
+for (var i = 0; i < scripts.length; i++){
+    var script = scripts[i];
+    if (script.type != 'text/markdown') continue;
+    var md = script.innerHTML.replace(/^\s<!--*/, '')
+        .replace(/-->\s*$/, '');
+    var markup = new Showdown.converter().makeHtml(md);
+    var slides = markup.split('<hr />');
+    for (var j = 0; j < slides.length; j++)
+        document.write('<div class=slide>' + slides[j] + '</div>');
+}
+w3c_slidy1.add_listener(document.body, "touchend", w3c_slidy1.mouse_button_click);
+</script>
+</body>
+</html>
